@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_WP5_Pro.mk
+    $(LOCAL_DIR)/twrp_WP5_Pro.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_WP5_Pro-user \
-    omni_WP5_Pro-userdebug \
-    omni_WP5_Pro-eng
+    twrp_WP5_Pro-user \
+    twrp_WP5_Pro-userdebug \
+    twrp_WP5_Pro-eng
