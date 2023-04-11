@@ -1,22 +1,25 @@
 #
-# Copyright (C) 2023 The Android Open Source Project
-# Copyright (C) 2023 SebaUbuntu's TWRP device tree generator
+# Copyright (C) 2022 The Android Open Source Project
+# Copyright (C) 2022 SebaUbuntu's TWRP device tree generator
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+# Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Inherit from WP5_Pro device
-$(call inherit-product, device/oukitel/WP5_Pro/device.mk)
+$(call inherit-product, device/tecno/WP5_Pro/device.mk)
+
+# Inherit some common twrp stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 PRODUCT_DEVICE := WP5_Pro
-PRODUCT_NAME := omni_WP5_Pro
+PRODUCT_NAME := twrp_WP5_Pro
 PRODUCT_BRAND := OUKITEL
 PRODUCT_MODEL := WP5 Pro
 PRODUCT_MANUFACTURER := oukitel
