@@ -51,3 +51,7 @@ auto                      vfat     /devices/platform/mt_usb*                    
 /odmdtbo                  emmc     /dev/block/platform/bootdevice/by-name/odmdtbo           flags=display=odmdtbo
 /dtbo                     emmc     /dev/block/platform/bootdevice/by-name/dtbo              flags=display=dtbo
 /vbmeta                   emmc     /dev/block/platform/bootdevice/by-name/vbmeta            flags=display=vbmeta
+
+# External-Devices (SDCARD | OTG)
+/external_sd    auto     /dev/block/mmcblk1p1  /dev/block/mmcblk1            flags=display="External_SDcard";storage;wipeingui;removable;fsflags="utf8"
+/usbotg        auto     /dev/block/mmcblk1p2  /dev/block/mmcblk1p2                     flags=display="Usb_Otg";storage;wipeingui;removable;fsflags="utf8"
