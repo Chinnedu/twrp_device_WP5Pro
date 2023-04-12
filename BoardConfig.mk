@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/oukitel/WP5Pro
+DEVICE_PATH := device/oukitel/WP5_Pro
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
