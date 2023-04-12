@@ -7,6 +7,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),WP5_Pro)
+ifeq ($(TARGET_DEVICE),WP5Pro)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
