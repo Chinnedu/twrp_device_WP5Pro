@@ -12,11 +12,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 # Inherit some common twrp stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-# Inherit from WP5Pro device
-$(call inherit-product, device/tecno/WP5Pro/device.mk)
+# Inherit from WP5_Pro device
+$(call inherit-product, device/tecno/WP5_Pro/device.mk)
 
-PRODUCT_DEVICE := WP5Pro
-PRODUCT_NAME := twrp_WP5Pro
+PRODUCT_DEVICE := WP5_Pro
+PRODUCT_NAME := twrp_WP5_Pro
 PRODUCT_BRAND := OUKITEL
 PRODUCT_MODEL := WP5 Pro
 PRODUCT_MANUFACTURER := oukitel
